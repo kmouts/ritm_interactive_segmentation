@@ -1,24 +1,30 @@
-INTERACTIVE_MODELS_PATH: "./weights"
+# INTERACTIVE_MODELS_PATH: "./weights"
+INTERACTIVE_MODELS_PATH: "./pretrained_models"
 EXPS_PATH: "./experiments"
 
 # Evaluation datasets
-GRABCUT_PATH: "./datasets/GrabCut"
-BERKELEY_PATH: "./datasets/Berkeley"
-DAVIS_PATH: "./datasets/DAVIS"
-COCO_MVAL_PATH: "./datasets/COCO_MVal"
+GRABCUT_PATH: "/mnt/DATA/DATASETS/Segmentation/GrabCut"
+BERKELEY_PATH: "/mnt/DATA/DATASETS/Segmentation/Berkeley"
+DAVIS_PATH: "/mnt/DATA/DATASETS/Segmentation/DAVIS"
+COCO_MVAL_PATH: "/mnt/DATA/DATASETS/Segmentation/COCO_MVal"
 
 # Train datasets
 SBD_PATH: "./datasets/SBD"
 COCO_PATH: "./datasets/coco2017"
 LVIS_PATH: "./datasets/LVIS"
 OPENIMAGES_PATH: "./datasets/OpenImages"
-PASCALVOC_PATH: "./datasets/PascalVOC"
+PASCALVOC_PATH: "/mnt/DATA/DATASETS/Segmentation/VOCdevkit/VOC2006"
 ADE20K_PATH: "./datasets/ADE20K"
 
 # You can download the weights for HRNet from the repository:
 # https://github.com/HRNet/HRNet-Image-Classification
 IMAGENET_PRETRAINED_MODELS:
-  HRNETV2_W18: "./pretrained_models/hrnetv2_w18_imagenet_pretrained.pth"
-  HRNETV2_W32: "./pretrained_models/hrnetv2_w32_imagenet_pretrained.pth"
-  HRNETV2_W40: "./pretrained_models/hrnetv2_w40_imagenet_pretrained.pth"
-  HRNETV2_W48: "./pretrained_models/hrnetv2_w48_imagenet_pretrained.pth"
+  # HRNETV2_W18: "./pretrained_models/hrnetv2_w18_imagenet_pretrained.pth"
+  # HRNETV2_W32: "./pretrained_models/hrnetv2_w32_imagenet_pretrained.pth"
+  # HRNETV2_W40: "./pretrained_models/hrnetv2_w40_imagenet_pretrained.pth"
+  # HRNETV2_W48: "./pretrained_models/hrnetv2_w48_imagenet_pretrained.pth"
+  # HRNet18 IT-M: "./pretrained_models/sbd_h18_itermask.pth"
+  HRNet18: "./pretrained_models/coco_lvis_h18_baseline.pth"
+  HRNet18s IT-M: "./pretrained_models/coco_lvis_h18s_itermask.pth"
+  HRNet18_coco IT-M: "./pretrained_models/coco_lvis_h18_itermask.pth"
+  HRNet32 IT-M: "./pretrained_models/coco_lvis_h32_itermask.pth"
