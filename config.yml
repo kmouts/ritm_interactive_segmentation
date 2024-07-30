@@ -7,6 +7,7 @@ GRABCUT_PATH: "/mnt/DATA/DATASETS/Segmentation/GrabCut"
 BERKELEY_PATH: "/mnt/DATA/DATASETS/Segmentation/Berkeley"
 DAVIS_PATH: "/mnt/DATA/DATASETS/Segmentation/DAVIS"
 COCO_MVAL_PATH: "/mnt/DATA/DATASETS/Segmentation/COCO_MVal"
+SD1CC_PATH: "/mnt/DATA/DATASETS/Segmentation/SD1CC"
 
 # Train datasets
 SBD_PATH: "./datasets/SBD"

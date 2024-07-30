@@ -20,7 +20,7 @@ def parse_args():
     group_pkl_path = parser.add_mutually_exclusive_group(required=True)
     group_pkl_path.add_argument('--folder', type=str, default=None,
                                 help='Path to folder with .pickle files.')
-    group_pkl_path.add_argument('--files', nargs='+', default='/home/kmouts/Projects/ritm_interactive_segmentation/experiments/evaluation_logs/others/sbd_h18_itermask/plots/GrabCut_cvpr_NoBRS_20.pickle',
+    group_pkl_path.add_argument('--files', nargs='+', default=None,
                                 help='List of paths to .pickle files separated by space.')
     group_pkl_path.add_argument('--model-dirs', nargs='+', default=None,
                                 help="List of paths to model directories with 'plots' folder "
@@ -113,7 +113,6 @@ def get_target_file_path(plots_path, dataset_name):
 
 
 def get_files_list(args, cfg):
-    debugpy.breakpoint() 
     if args.folder is not None:
         files_list = Path(args.folder).glob('*.pickle')
     elif args.files is not None:

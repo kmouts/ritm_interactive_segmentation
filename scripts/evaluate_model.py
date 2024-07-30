@@ -14,6 +14,10 @@ from isegm.utils.vis import draw_probmap, draw_with_blend_and_clicks
 from isegm.inference.predictors import get_predictor
 from isegm.inference.evaluation import evaluate_dataset
 
+import os
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+
+
 
 def parse_args():
     parser = argparse.ArgumentParser()

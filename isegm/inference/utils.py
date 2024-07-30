@@ -60,6 +60,8 @@ def get_dataset(dataset_name, cfg):
         dataset = PascalVocDataset(cfg.PASCALVOC_PATH, split='test')
     elif dataset_name == 'COCO_MVal':
         dataset = DavisDataset(cfg.COCO_MVAL_PATH)
+    elif dataset_name == 'SD1CC':
+        dataset = DavisDataset(cfg.SD1CC_PATH)
     else:
         dataset = None
 
