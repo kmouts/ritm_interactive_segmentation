@@ -29,3 +29,4 @@ IMAGENET_PRETRAINED_MODELS:
   HRNet18s IT-M: "./pretrained_models/coco_lvis_h18s_itermask.pth"
   HRNet18_coco IT-M: "./pretrained_models/coco_lvis_h18_itermask.pth"
   HRNet32 IT-M: "./pretrained_models/coco_lvis_h32_itermask.pth"
+  HRNet18_SBD_IT-M: "./pretrained_models/sbd_h18_itermask.pth"
